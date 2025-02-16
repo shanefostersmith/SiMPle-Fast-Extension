@@ -12,6 +12,7 @@ Implementation 2 (multi_fast.py):
   Note that, the all feature matrices associated with the query (or the reference) must have the same number of rows (aka, the same time-axis size). For a query / reference feature matrix pair, these matrices           must have the same number of columns (aka. the same feature dimensions). 
 
 These implementations expand on the following work:
+
 1. 
 	@ARTICLE{8392419,
  	author = {Silva, Diego F. and Yeh, Chin-Chia M. and Zhu, Yan and Batista, Gustavo E. A. P. A. and Keogh, Eamonn},
@@ -22,5 +23,6 @@ These implementations expand on the following work:
   	number={1},
   	pages={29-38},
   	doi={10.1109/TMM.2018.2849563}}
-2. 
-	https://github.com/acmiyaguchi/birdclef-2021/tree/main/simple
+
+   
+2. https://github.com/acmiyaguchi/birdclef-2021/tree/main/simple
