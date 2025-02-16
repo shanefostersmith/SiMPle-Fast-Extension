@@ -15,12 +15,12 @@ These implementations expand on the following work:
 1. 
 	@ARTICLE{8392419,
  	author = {Silva, Diego F. and Yeh, Chin-Chia M. and Zhu, Yan and Batista, Gustavo E. A. P. A. and Keogh, Eamonn},
-  journal={IEEE Transactions on Multimedia}, 
-  title={Fast Similarity Matrix Profile for Music Analysis and Exploration}, 
+  	journal={IEEE Transactions on Multimedia}, 
+  	title={Fast Similarity Matrix Profile for Music Analysis and Exploration}, 
  	year={2019},
-  volume={21},
-  number={1},
-  pages={29-38},
-  doi={10.1109/TMM.2018.2849563}}
+  	volume={21},
+  	number={1},
+  	pages={29-38},
+  	doi={10.1109/TMM.2018.2849563}}
 2. 
 	https://github.com/acmiyaguchi/birdclef-2021/tree/main/simple
