@@ -1,15 +1,24 @@
 # SiMPle-Fast-Extension
-Two implementations of the SiMPle-Fast method for retrieving similarity matrix profiles on multi-dimensional data. These implementations include cosine distance as an additional metric. Furthermore, instead of returning the best single match per window, these implementations retrieve an arbitrary top 'x' matches per window in ascending order.
+Two implementations of the SiMPle-Fast method for retrieving matrix profiles on multi-dimensional data. 
+These implementations can retrieve the top *k* closest matching windows (instead of the single closest window) and include cosine distance as an additional metric.
 
-Implementation 1 (simple_fast.py):
+## Implementation 1 (simple_fast.py):
 
-  Given query and reference time-series data, find the ‘x’ lowest distance windows in the reference data, for each sliding window in the ‘query’ data.
+  Given a data matrix and query matrix, find the *k* nearest windows in the query matrix for all sliding windows in the data matrix.
 
-Implementation 2 (multi_fast.py):
+## Implementation 2 (multi_fast.py):
 
-  Given some number of query feature matrices, reference feature matrices, and weights associated with each feature matrix pair, find the ‘x’ lowest distance windows in the reference data by combining the information   of the feature matrix pairs, for each sliding window in the ‘query’.
+	Given any number of data and query features (which represent the same underlying time-series data), find the *k* nearest windows in the query matrix for all sliding windows in the data matrix by combining the distance values of all features. 
+	
+	- Each data-query feature pair is given a weight
+	- The distance values of the individual data-query feature pairs can be combined with the following methods:
+		- Arithmetic Mean
+		- Geometric Mean
+		- Harmonic Mean
+		- Root Mean Square
+		- Softmax
 
-  Note that, the all feature matrices associated with the query (or the reference) must have the same number of rows (aka, the same time-axis size). For a query / reference feature matrix pair, these matrices           must have the same number of columns (aka. the same feature dimensions). 
+## References
 
 These implementations expand on the following work:
 
