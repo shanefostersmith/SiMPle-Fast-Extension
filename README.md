@@ -4,19 +4,20 @@ These implementations can retrieve the top *k* closest matching windows (instead
 
 ## Implementation 1 (simple_fast.py):
 
-  Given a data matrix and query matrix, find the *k* nearest windows in the query matrix for all sliding windows in the data matrix.
+Given a data matrix and query matrix, find the *k* nearest windows in the query matrix for all sliding windows in the data matrix.
+The *k* nearest query windows are outputted in ascending order.
 
 ## Implementation 2 (multi_fast.py):
 
-	Given any number of data and query features (which represent the same underlying time-series data), find the *k* nearest windows in the query matrix for all sliding windows in the data matrix by combining the distance values of all features. 
-	
-	- Each data-query feature pair is given a weight
-	- The distance values of the individual data-query feature pairs can be combined with the following methods:
-		- Arithmetic Mean
-		- Geometric Mean
-		- Harmonic Mean
-		- Root Mean Square
-		- Softmax
+Given any number of data and query features (which represent the same underlying time-series data), find the *k* nearest windows in the query matrix for all sliding windows in the data matrix by combining the distance values of all features. 
+
+- Each data-query feature pair is given a weight
+- The distance values of the individual data-query feature pairs can be combined with the following methods:
+	- Arithmetic Mean
+	- Geometric Mean
+	- Harmonic Mean
+	- Root Mean Square
+	- Softmax
 
 ## References
 
